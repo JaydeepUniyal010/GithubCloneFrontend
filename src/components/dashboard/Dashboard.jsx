@@ -15,7 +15,7 @@ const Dashboard = () => {
 
     const fetchRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/user/${userId}`);
+        const response = await fetch(`3.111.40.160:3000/repo/user/${userId}`);
         const data = await response.json();
         setRepositories(data.repositories);
       } catch (err) {
@@ -25,7 +25,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/all`);
+        const response = await fetch(`3.111.40.160:3000/repo/all`);
         const data = await response.json();
         setSuggestedRepositories(data);
       } catch (err) {
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/user/${userId}`);
+        const response = await fetch(`3.111.40.160:3000/user/${userId}`);
         const data = await response.json();
         setUserProfile(data);
       } catch (err) {

@@ -10,7 +10,7 @@ import { useAuth } from "../../authContext";
 
 const Profile = () => {
   const navigate = useNavigate();
-  const [userDetails, setUserDetails] = useState({ username: "username", bio: "", avatar: "", followers: 0, following: 0 });
+  const [userDetails, setUserDetails] = useState({ username: "username", bio: "", avatar: "", followers: 101, following: 51 });
   const { setCurrentUser } = useAuth();
 
   useEffect(() => {
@@ -20,7 +20,12 @@ const Profile = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `http://localhost:3000/userProfile/${userId}`
+            `3.111.40.160:3000
+            
+            
+            
+            
+            /userProfile/${userId}`
           );
           setUserDetails(response.data);
         } catch (err) {
@@ -92,8 +97,8 @@ const Profile = () => {
           <button className="follow-btn">Follow</button>
 
           <div className="follower">
-            <p>{userDetails.followers} 101 Followers</p>
-            <p>{userDetails.following} 51 Following</p>
+            <p>{userDetails.followers} Followers</p>
+            <p>{userDetails.following} Following</p>
           </div>
         </div>
 

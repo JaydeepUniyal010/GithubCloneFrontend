@@ -1,0 +1,181 @@
+/* dashboard.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+#dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-profile h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.user-profile p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.suggested-repos h3 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.suggested-repo {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: white;
+}
+
+.suggested-repo h4 {
+  margin: 0;
+  font-size: 1em;
+  color: #0073e6;
+  
+}
+
+.suggested-repo p {
+  font-size: 0.85em;
+  color: #666;
+  
+}
+
+main {
+  flex: 1;
+  background-color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+
+.tabs button.active {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.repo-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.repo-card h4 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #0073e6;
+}
+
+.repo-card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.repo-stats {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 0.85em;
+  color: #777;
+}
+
+.repo-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.repo-card button:hover {
+  background-color: #005bb5;
+}
+
+.events {
+  width: 20%;
+  background-color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.events h3 {
+  margin-bottom: 15px;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .events {
+    width: 100%;
+  }
+}
